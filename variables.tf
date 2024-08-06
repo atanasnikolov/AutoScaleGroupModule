@@ -3,7 +3,7 @@ variable "ascname" {
   type  = string
 }
 
-variable "aws_ami" {
+variable "aws_asdfasdfami" {
   description = "The ami of the image we are going to use for the auto scaling group"
   type  = string
 }

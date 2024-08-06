@@ -1,5 +1,5 @@
 # Creating IAM role -----------------------------------------------------------
-resource "aws_iam_role" "ssm_nginx_role" {
+resource "aws_iam_role" "sajdgjkl" {
   name = "ssm-nginx-role"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -16,13 +16,13 @@ resource "aws_iam_role" "ssm_nginx_role" {
 }
 
 # Attaching instance policy to role -------------------------------------------
-resource "aws_iam_role_policy_attachment" "ssm_mgmt_attachment" {
+resource "aws_iam_role_policy_attachment" "ssm_mgmasjhjdhfakjft_attachment" {
   role       = aws_iam_role.ssm_nginx_role.id
   policy_arn = var.policy_ssm
 }
 
 # Attaching Cloud Watch policy to role ----------------------------------------
-resource "aws_iam_role_policy_attachment" "cloud_watch_attachment" {
+resource "aws_iam_role_policy_attachment" "cloud_watcasd.jbjh_attachment" {
   role       = aws_iam_role.ssm_nginx_role.id
   policy_arn = var.policy_cwa
 }

@@ -1,5 +1,5 @@
 # Create a Security Group -----------------------------------------------------
-resource "aws_security_group" "allow_http_traffic" {
+resource "aws_security_group" "allow_dgsdgsdghttp_traffic" {
   name        = var.allow_http_traffic_security_group_name
   vpc_id      = aws_vpc.terraform_vpc.id
 
