@@ -6,7 +6,7 @@ resource "aws_security_group" "allow_dgsdgsdghttp_traffic" {
   ingress {
     from_port        = 80
     to_port          = 80
-    protocol         = "TCP"
+    protocol         = "UDP"
     cidr_blocks      = [var.allowed_ip_address]
   }
 

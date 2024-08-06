@@ -2,7 +2,7 @@
 # Create a Load Balancer ------------------------------------------------------
 resource "aws_lb" "load_balancer_for_autoscale" {
   name               = var.load_balancer_name
-  internal           = false
+  internal           = true
   load_balancer_type = "application"
   security_groups    = [aws_security_group.allow_http_traffic.id]
   subnets            = [aws_subnet.terraform_sub1.id, aws_subnet.terraform_sub2.id]
