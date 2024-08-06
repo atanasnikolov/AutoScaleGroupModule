@@ -1,5 +1,5 @@
 # Cloudwatch configuaration ---------------------------------------------------
-resource "aws_cloudwatch_metric_alarm" "autoscale_alarm" {
+resource "aws_cloudwatch_metric_alarm" "cloudwatch_alarm" {
   alarm_name                = var.cloudwatch_alarm_name
   comparison_operator       = var.cloudwatch_comparison_operator
   evaluation_periods        = 1
